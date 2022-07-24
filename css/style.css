@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/******* reset css ********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+/************** header **************/
+.header-page{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: absolute;
+}
+.header-title{
+    color: #ffffff;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu li{
+    margin: 0 15px;
+}
+
+.header-menu a{
+    color: #ffffff;
+    transition: .5s;
+}
+
+.header-menu a:hover{
+    color: #dc143c;
+}
+/************** fim header **************/
+
+/************** hero **************/
+.hero{
+    width: 100%;
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title{
+    color: #ffffff;
+    font-size: 8vmin;
+    margin-bottom: 40px;
+}
+
+.hero-sub-title{
+    color: #ffffff;
+    font-size: 5vmin;
+    margin-bottom: 50px;
+}
+
+.btn{
+    color: #ffffff;
+    border: 3px solid #dc143c;
+    padding: 10px 20px;
+    background-color: #dc143c;
+    border-radius: 70px;
+    transition: .5s;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: transparent;
+}
+/************** fim hero **************/
+
+/****** cards *******/
+.cards{
+    width: 90%;
+    min-height: 100vh;
+    margin: 100px auto;
+    text-align: center;
+}
+.card-title{
+    margin: 30px 0;
+    margin-bottom: 30px;
+}
+.cards-elements{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.card-item{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 0px rgba(173,149,173,1);
+    padding: 30px 15px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.card-item img{  
+    width: 100%;
+    border-radius: 7px;
+}
+
+.card-item:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.card-item h3{
+    margin: 10px 0 10px;
+}
+.card-item p {
+    text-align: left;
+    font-size: 15px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.card-item .btn:hover{
+    color: #000;
+}
+/****** fim cards *******/
+
+/****** footer *******/
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.redes a{
+    color: #666;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: .5s;
+}
+.redes a:hover{
+    color: #dc143c;
+}
+/****** fim footer *******/
+
+
+@media(max-width: 780px) {
+    .card-item{
+        width: 80%;
+        align-items: center;
+    }
+    .card-item p{
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px){
+    .header-page{
+        justify-content: space-around;
+    }
+    .header-menu a{
+        font-size: 13px;
+    }
+}
